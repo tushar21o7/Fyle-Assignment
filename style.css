@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: #183b56;
+  --secondary-text-color: #577592;
+  --accent-color: #2294ed;
+  --accent-color-dark: #1d69a3;
+}
+
+body {
+  border: 2px solid var(--primary-text-color);
+  margin: 8px;
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-text-color);
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: var(--secondary-text-color);
+  line-height: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+
+img {
+  height: 260px;
+  width: 260px;
+  border-radius: 150px;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  height: 32px;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
+.news-input {
+  width: 200px;
+  height: 100%;
+  padding-inline: 12px;
+  border-radius: 4px;
+  border: 2px solid #bbd0e2;
+  font-family: "Roboto", sans-serif;
+}
+
+.search-button {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+
+.search-button:hover {
+  background-color: var(--accent-color-dark);
+}
+
+.user-container {
+  margin: 25px 0px;
+}
+
+.left-half {
+  margin-left: 70px;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.right-half {
+  margin-left: 80px;
+}
+
+.user {
+  margin: 15px;
+}
+
+#name {
+  font-size: 2.5rem;
+}
+
+.pagination-bar {
+  width: 1500px;
+  justify-content: center;
+}
+
+.btn {
+  margin: 5px 3px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(206, 232, 234);
+}
+
+.btn:hover {
+  background-color: #b1cbd2;
+  cursor: pointer;
+}
+
+.space {
+  margin: 5px 3px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #b1cbd2;
+}
+
+.active {
+  background-color: var(--primary-text-color);
+  color: white;
+}
+
+.repos-per-page {
+  margin: 5px 3px;
+  padding: 10px 7px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(206, 232, 234);
+  display: inline-block;
+}
+
+.cards-container {
+  justify-content: space-around;
+  gap: 60px;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+
+.card {
+  padding: 20px;
+  width: 550px;
+  min-height: 200px;
+  box-shadow: 0 0 4px #d4ecff;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.repo-topics {
+  gap: 5px;
+  flex-wrap: wrap;
+  position: relative;
+  top: 15px;
+  bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.topic {
+  padding: 5px 10px;
+  color: #477bb8;
+  background-color: rgb(206, 232, 234);
+  border-radius: 20px;
+}
+
+.topic:hover {
+  background-color: rgb(22, 99, 138);
+  color: white;
+}

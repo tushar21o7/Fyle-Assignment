@@ -3,10 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Github User</title>
+    <title>Github Repositories</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="flex user-container">
+      <div class="left-half flex" id="left-half">
+        <img src="" alt="user-image" id="image" />
+        <p class="user-github">
+          <a href="" id="github"></a>
+        </p>
+      </div>
+      <div class="right-half" id="right-half">
+        <h1 id="name" class="user">Name</h1>
+        <h3 id="bio" class="user">Bio</h3>
+        <h3 id="location" class="user">Location</h3>
+        <a href="" id="twitter" class="user">Twitter</a>
+      </div>
+    </div>
+
+    <nav>
+      <div class="search-bar flex">
+        <input
+          id="search-text"
+          type="text"
+          class="news-input"
+          placeholder="Search repositories..."
+        />
+        <button id="search-button" class="search-button">Search</button>
+      </div>
+    </nav>
+
+    <main>
+      <div style="padding: 35px">
+        <div class="cards-container container flex" id="cards-container"></div>
+      </div>
+      <div class="flex" style="padding: 10px">
+        <select id="repos-per-page" class="repos-per-page">
+          <option value="10" selected>10 per page</option>
+          <option value="20">20 per page</option>
+          <option value="30">30 per page</option>
+          <option value="40">40 per page</option>
+          <option value="50">50 per page</option>
+          <option value="60">60 per page</option>
+          <option value="70">70 per page</option>
+          <option value="80">80 per page</option>
+          <option value="90">90 per page</option>
+          <option value="100">100 per page</option>
+        </select>
+        <div class="pagination-bar flex" id="pagination-bar">
+          <button
+            class="btn"
+            id="prev-button"
+            onclick="changeCurrentPage('prev')"
+          >
+            <
+          </button>
+          <button
+            class="btn"
+            id="next-button"
+            onclick="changeCurrentPage('next')"
+          >
+            >
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <template id="template-repo-card">
+      <div class="card">
+        <div class="card-header">
+          <h1 id="repo-title"></h1>
+        </div>
+        <div class="card-content">
+          <p class="repo-desc" id="repo-desc"></p>
+          <ul class="repo-topics flex" id="repo-topics"></ul>
+        </div>
+      </div>
+    </template>
+
     <script src="script.js"></script>
   </body>
 </html>
