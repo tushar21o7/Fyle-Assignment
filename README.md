@@ -27,10 +27,8 @@ The application includes a powerful search bar that allows users to filter repos
 <h2>Getting Started</h2>
 
 To run the project locally, follow these steps:
-<li>Clone the repository to your local machine.</li>
-<li>git clone https://github.com/your-username/github-repo-viewer.git</li>
+<li>Clone the repository to your local machine: https://github.com/tushar21o7/Fyle-Assignment.git</li>
 <li>Open the project in your preferred code editor.</li>
-<li>Customize the GitHub API endpoint in the JavaScript code to fetch data for the desired user.</li>
 <li>Open the index.html file in a web browser to launch the application.</li>
 
 <h2>Technologies Used</h2>
