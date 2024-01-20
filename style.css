@@ -31,7 +31,7 @@ a {
   color: var(--secondary-text-color);
 }
 
-img {
+.img {
   height: 260px;
   width: 260px;
   border-radius: 150px;
@@ -39,6 +39,26 @@ img {
 
 ul {
   list-style: none;
+}
+
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeleton-card {
+  width: 550px;
+  min-height: 200px;
+  border-radius: 10px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
 }
 
 .flex {
@@ -143,6 +163,9 @@ ul {
   gap: 60px;
   flex-wrap: wrap;
   row-gap: 50px;
+  background-color: #ecfaff;
+  padding: 20px 0px;
+  border-radius: 8px;
 }
 
 .card {
@@ -150,10 +173,10 @@ ul {
   width: 550px;
   min-height: 200px;
   box-shadow: 0 0 4px #d4ecff;
-  border: 2px solid var(--primary-text-color);
   border-radius: 10px;
   cursor: pointer;
   overflow: hidden;
+  background-color: white;
 }
 
 .repo-topics {

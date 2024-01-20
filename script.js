@@ -41,6 +41,10 @@ const addUserDetails = (data) => {
   location.innerHTML = data.location;
   twitter.href =
     twitter.innerHTML = `https://twitter.com/${data.twitter_username}`;
+
+  // Remove loading animation
+  const rightHalf = document.getElementById("right-half");
+  rightHalf.classList.remove("skeleton");
 };
 
 const fetchRepositories = async () => {
@@ -134,6 +138,10 @@ const buildPagination = () => {
 
   const prevButton = document.getElementById("prev-button");
   prevButton.insertAdjacentElement("afterend", list);
+
+  // setTimeout(() => {
+  //   console.log();
+  // }, 5000);
 };
 
 const changeCurrentPage = (val) => {

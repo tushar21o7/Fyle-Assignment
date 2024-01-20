@@ -9,16 +9,16 @@
   <body>
     <div class="flex user-container">
       <div class="left-half flex" id="left-half">
-        <img src="" alt="user-image" id="image" />
+        <img src="" alt="user-image" id="image" class="img skeleton" />
         <p class="user-github">
           <a href="" id="github"></a>
         </p>
       </div>
-      <div class="right-half" id="right-half">
-        <h1 id="name" class="user">Name</h1>
-        <h3 id="bio" class="user">Bio</h3>
-        <h3 id="location" class="user">Location</h3>
-        <a href="" id="twitter" class="user">Twitter</a>
+      <div class="right-half skeleton skeleton-card" id="right-half">
+        <h1 id="name" class="user"></h1>
+        <h3 id="bio" class="user"></h3>
+        <h3 id="location" class="user"></h3>
+        <a href="" id="twitter" class="user"></a>
       </div>
     </div>
 
@@ -36,7 +36,12 @@
 
     <main>
       <div style="padding: 35px">
-        <div class="cards-container container flex" id="cards-container"></div>
+        <div class="cards-container container flex" id="cards-container">
+          <div class="skeleton skeleton-card"></div>
+          <div class="skeleton skeleton-card"></div>
+          <div class="skeleton skeleton-card"></div>
+          <div class="skeleton skeleton-card"></div>
+        </div>
       </div>
       <div class="flex" style="padding: 10px">
         <select id="repos-per-page" class="repos-per-page">
